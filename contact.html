@@ -12,45 +12,86 @@
         }
 
         body {
-            background-color: #495867;
+            background-color: #092134;
         }
 
         .nav {
-            background-color: red;
             overflow: hidden;
             margin: 0;
             padding: 0;
-            display: inline;
+            display: block;
             list-style-type: none;
+            align-items: center;
+            position: relative;
         }
 
         .nav-item {
             display: inline-block;
-            color: black;
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
             float: right;
-            background-color: #F7F7FF;
+            background-color: #ea8585;
+            color: #0c2c45;
             width: 22.85%;
             font-size: 1.3rem;
         }
 
+        .nav-item:hover {
+            background-color: #577399;
+            color: #ea8585;
+        }
+
         li > a {
-            color: #495867;
+            color: #0c2c45;
             text-decoration: none;
         }
 
         .active {
-            color: #FE5F55;
+            color: #0c2c45;
+        }
+        .active:hover {
+            color: #ea8585;
+        }
+
+        .container {
+            background-color: blue;
+            margin-right: 5%;
+            margin-left: 5%;
+            margin-top: 1%;
+            background-color: #DAE6F5;
+            padding: 2%;
+            border-radius: 1rem;
+            line-height: 2rem;
+        }
+
+        p {
+            text-align: right;
+            direction: rtl;
+            font-size: 1.2rem;
+        }
+
+        .picture {
+            float: left;
+            border-radius: 1rem;
+            border: 1px solid black;
+        }
+
+        footer {
+            background-color: #577399;
+            color: #f0f3fd;
+            padding: 10px;
+            margin-top: 10px;
         }
     </style>
+
+    <link rel="icon" href="assets/icon.png" type="image/png" />
 </head>
 
 <body>
     <ul class="nav">
         <li class="nav-item">
-            <a href="index.html" class="active">وبسایت رزومه</a>
+            <a href="index.html" class="active"><b>وبسایت رزومه</b></a>
         </li>
         <li class="nav-item">
             <a href="index.html">صفحه اصلی</a>
@@ -62,6 +103,8 @@
             <a href="contact.html" class="active">تماس</a>
         </li>
     </ul>
+
+    <footer><center>Developed by Amirreza in Blueprintco</center></footer>
 </body>
 
 </html>
