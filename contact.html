@@ -11,6 +11,10 @@
             font-family: 'Vazir', sans-serif;
         }
 
+        body {
+            background-color: #495867;
+        }
+
         .nav {
             background-color: red;
             overflow: hidden;
@@ -21,19 +25,24 @@
         }
 
         .nav-item {
-            display: block;
+            display: inline-block;
             color: black;
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
             float: right;
-            background-color: red;
+            background-color: #F7F7FF;
             width: 22.85%;
+            font-size: 1.3rem;
         }
 
-        a {
-            color: white;
+        li > a {
+            color: #495867;
             text-decoration: none;
+        }
+
+        .active {
+            color: #FE5F55;
         }
     </style>
 </head>
@@ -41,7 +50,7 @@
 <body>
     <ul class="nav">
         <li class="nav-item">
-            <a href="index.html">وبسایت رزومه</a>
+            <a href="index.html" class="active">وبسایت رزومه</a>
         </li>
         <li class="nav-item">
             <a href="index.html">صفحه اصلی</a>
@@ -50,7 +59,7 @@
             <a href="interests.html">علایق پژوهشی</a>
         </li>
         <li class="nav-item">
-            <a href="contact.html" style="color: yellow;">تماس</a>
+            <a href="contact.html" class="active">تماس</a>
         </li>
     </ul>
 </body>

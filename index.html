@@ -11,40 +11,81 @@
             font-family: 'Vazir', sans-serif;
         }
 
+        body {
+            background-color: #495867;
+        }
+
         .nav {
-            background-color: red;
             overflow: hidden;
             margin: 0;
             padding: 0;
-            display: inline;
+            display: block;
             list-style-type: none;
+            align-items: center;
+            position: relative;
         }
 
         .nav-item {
-            display: block;
-            color: black;
+            display: inline-block;
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
             float: right;
-            background-color: red;
+            background-color: #F7F7FF;
             width: 22.85%;
+            font-size: 1.3rem;
         }
 
-        a {
-            color: white;
+        li > a {
+            color: #495867;
             text-decoration: none;
         }
+
+        .active {
+            color: #FE5F55;
+        }
+
+        .container {
+            background-color: blue;
+            margin-right: 5%;
+            margin-left: 5%;
+            margin-top: 1%;
+            background-color: #DAE6F5;
+            padding: 2%;
+            border-radius: 1rem;
+            line-height: 2rem;
+        }
+
+        p {
+            text-align: right;
+            direction: rtl;
+            font-size: 1.2rem;
+        }
+
+        .picture {
+            float: left;
+            border-radius: 1rem;
+            border: 1px solid black;
+        }
+
+        footer {
+            background-color: #577399;
+            color: #f0f3fd;
+            padding: 10px;
+            margin-top: 10px;
+        }
     </style>
+
+    <link rel="icon" href="assets/icon.png" type="image/png" />
 </head>
 
 <body>
     <ul class="nav">
         <li class="nav-item">
-            <a href="">وبسایت رزومه</a>
+            <a href="index.html" class="active"><b>وبسایت رزومه</b></a>
         </li>
         <li class="nav-item">
-            <a href="">صفحه اصلی</a>
+            <a href="index.html" class="active">صفحه اصلی</a>
         </li>
         <li class="nav-item">
             <a href="interests.html">علایق پژوهشی</a>
@@ -53,6 +94,30 @@
             <a href="contact.html">تماس</a>
         </li>
     </ul>
+
+    <div class="container">
+        <p>نام: امیررضا
+        <img src="assets/pic.jpg" width="840" height="470" class="picture" /></p>
+        <p>نام خانوادگی: قدیانی</p>
+        <p>تولد: ۱۹-۱۰-۱۳۸۰</p>
+        <p>متولد: تهران - ایران</p>
+        <p>فارق التحصیل: علامه حلی تهران</p>
+        <p>محصل: رشته مهندسی کامپیوتر دانشگاه صنعتی شریف</p>
+        <pre> </pre>
+        <pre> </pre>
+        <pre> </pre>
+        <pre> </pre>
+        <pre> </pre>
+        <hr>
+        <p>توضیحات</p>
+    </div>
+
+    <div class="container">
+        <pre> </pre>
+        <pre> </pre>
+        <pre> </pre>
+    </div>
+    <footer><center>Developed by Amirreza in Blueprintco</center></footer>
 </body>
 
 </html>
