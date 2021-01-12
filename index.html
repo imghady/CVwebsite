@@ -42,7 +42,7 @@
             color: #ea8585;
         }
 
-        li > a {
+        a {
             color: #0c2c45;
             text-decoration: none;
         }
@@ -50,7 +50,7 @@
         .active {
             color: #0c2c45;
         }
-        .active:hover {
+        a:hover {
             color: #ea8585;
         }
 
@@ -82,10 +82,18 @@
             color: #f0f3fd;
             padding: 10px;
             margin-top: 10px;
+            font-size: 1.3rem;
+        }
+
+        #greet {
+            direction: rtl;
+            text-align: center;
+            font-size: 1.5rem;
         }
     </style>
 
     <link rel="icon" href="assets/icon.png" type="image/png" />
+
 </head>
 
 <body>
@@ -103,14 +111,19 @@
             <a href="contact.html">تماس</a>
         </li>
     </ul>
-
     <div class="container">
-        <p>نام: امیررضا
-        <img src="assets/pic.jpg" width="840" height="470" class="picture" /></p>
+        <div id="greet"></div>
+    </div>
+    <div class="container">
+        </br>
+        <p><img src="assets/pic.jpg" width="840" height="470" class="picture" /></p>
+        </br>
+        </br>
+        <p>نام: امیررضا</p>
         <p>نام خانوادگی: قدیانی</p>
         <p>تولد: ۱۹-۱۰-۱۳۸۰</p>
         <p>متولد: تهران - ایران</p>
-        <p>فارق التحصیل: علامه حلی تهران</p>
+        <p>فارق التحصیل:دبیرستان علامه حلی تهران</p>
         <p>محصل: رشته مهندسی کامپیوتر دانشگاه صنعتی شریف</p>
         <pre> </pre>
         <pre> </pre>
@@ -118,7 +131,9 @@
         <pre> </pre>
         <pre> </pre>
         <hr>
+        </br>
         <p>توضیحات</p>
+        <p></p>
     </div>
 
     <div class="container">
@@ -126,7 +141,16 @@
         <pre> </pre>
         <pre> </pre>
     </div>
-    <footer><center>Developed by Amirreza in Blueprintco</center></footer>
+    <footer><center>Developed by Amirreza in <a href="http://blueprintco.ir" style="font-size: 1.7rem;"><img src="http://s15.picofile.com/file/8408703950/final.png" hspace="10px" height="30px" width="30px">Blueprintco</a></center></footer>
+
+    <script>
+        var name = prompt("نام و نام خانوادگی خود را وارد کنید", "");
+        console.log(name);
+        if (name != null) {
+            document.getElementById("greet").innerHTML = " کاربر گرامی، " + name + " خوش آمدید! ";
+        }
+    </script>
+
 </body>
 
 </html>
